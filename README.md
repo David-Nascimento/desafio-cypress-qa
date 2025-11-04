@@ -74,7 +74,7 @@ Siga os passos abaixo para configurar o ambiente e instalar as dependências do 
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/SEU_USUARIO/desafio-cypress-QA.git](https://github.com/SEU_USUARIO/desafio-cypress-QA.git)
+    git clone https://github.com/SEU_USUARIO/desafio-cypress-QA.git
     ```
 
 2.  **Navegue até o diretório do projeto:**
