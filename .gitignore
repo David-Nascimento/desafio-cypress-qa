@@ -1,0 +1,72 @@
+# Arquivo .gitignore para Projetos Node.js / Cypress
+
+# Dependências
+# --------------------
+# Ignora a pasta que contém todos os pacotes instalados via npm.
+# Esta pasta é recriada localmente usando `npm install`.
+/node_modules
+
+# Logs
+# --------------------
+# Ignora logs gerados pelo npm e outros processos.
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Arquivos de Sistema Operacional
+# --------------------
+# Arquivos de configuração de sistema (macOS e Windows)
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Arquivos de IDEs e Editores
+# --------------------
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Arquivos de Artefatos do Cypress
+# --------------------
+# O Cypress gera vídeos e screenshots de testes (especialmente em `cypress run`).
+# Geralmente, não queremos versionar esses artefatos, a menos que
+# sejam usados para relatórios de falhas específicas.
+/cypress/videos/
+/cypress/screenshots/
+
+# Arquivos de Relatórios de Teste
+# --------------------
+# Ignora relatórios gerados por ferramentas como Mochawesome ou Allure
+/cypress/reports/
+/mochawesome-report/
+/allure-results/
+/allure-report/
+
+# Arquivos de Ambiente (Segurança)
+# --------------------
+# Nunca versione arquivos que contenham senhas, chaves de API ou
+# outras informações sensíveis.
+.env
+.env.local
+.env.*.local
+cypress.env.json
+
+# Arquivos de Cache e Build
+# --------------------
+.npm
+.eslintcache
+.stylelintcache
+/dist/
+/build/
+/coverage/
+
+# Arquivos de Configuração Específicos do Cypress (se não compartilhados)
+# --------------------
+# cypress.json (versões antigas do Cypress)
+# cypress.config.js (Geralmente *deve* ser versionado, a menos que contenha segredos)
+# cypress.env.json (Já listado acima, mas reforçando)
